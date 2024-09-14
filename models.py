@@ -23,3 +23,4 @@ class Stock(Base):
     __tablename__ = 'stocks'
 
     id = Column(Integer, primary_key=True, index=True)
+    quantity = Column(Integer)
