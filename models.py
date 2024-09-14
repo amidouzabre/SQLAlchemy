@@ -17,3 +17,7 @@ class Product(Base):
     name = Column(String, unique=True, index=True)
     description = Column(String, index=True)
     price = Column(Float)
+
+
+class Stock(Base):
+    __tablename__ = 'stocks'
