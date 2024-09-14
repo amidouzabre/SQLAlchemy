@@ -18,6 +18,8 @@ class Product(Base):
     description = Column(String, index=True)
     price = Column(Float)
 
+    stocks = relationship("Stock", back_populates="product")
+
 
 class Stock(Base):
     __tablename__ = 'stocks'
