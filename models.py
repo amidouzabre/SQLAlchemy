@@ -5,3 +5,6 @@ Base = declarative_base()
 
 class Warehouse(Base):
     __tablename__ = 'warehouses'
+
+    id = Column(Integer, primary_key=True, index=True)
+    
