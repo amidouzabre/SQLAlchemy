@@ -33,3 +33,4 @@ class Stock(Base):
     product_id = Column(Integer, ForeignKey("products.id"))
 
     warehouse = relationship("Warehouse", back_populates="stocks")
+    product = relationship("Product", back_populates="stocks")
