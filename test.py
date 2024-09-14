@@ -8,5 +8,7 @@ engine = create_engine(db_path)
 try:
     conn = engine.connect()
     print("Success")
+    # Create ours tables
+    Base.metadata.create_all(bind=conn)
 except Exception as ex:
     print(ex)
