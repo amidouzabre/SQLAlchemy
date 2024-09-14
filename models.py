@@ -16,3 +16,4 @@ class Product(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
     description = Column(String, index=True)
+    price = Column(Float)
