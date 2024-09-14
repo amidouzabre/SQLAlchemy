@@ -30,3 +30,4 @@ class Stock(Base):
     quantity = Column(Integer)
 
     warehouse_id = Column(Integer, ForeignKey("warehouses.id"))
+    product_id = Column(Integer, ForeignKey("products.id"))
