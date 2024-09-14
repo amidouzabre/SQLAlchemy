@@ -28,3 +28,5 @@ class Stock(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     quantity = Column(Integer)
+
+    warehouse_id = Column(Integer, ForeignKey("warehouses.id"))
