@@ -9,6 +9,8 @@ class Warehouse(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
 
+    stocks = relationship("Stock", back_populates="warehouse")
+
 
 class Product(Base):
     __tablename__ = 'products'
