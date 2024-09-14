@@ -7,4 +7,4 @@ class Warehouse(Base):
     __tablename__ = 'warehouses'
 
     id = Column(Integer, primary_key=True, index=True)
-    
+    name = Column(String, unique=True, index=True)
